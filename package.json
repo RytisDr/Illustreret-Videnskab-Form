@@ -1,0 +1,24 @@
+{
+  "name": "illustreret-videnskab-payment-form",
+  "version": "1.0.0",
+  "description": "Payment form prototype for Danish version of Illutrated Science.",
+  "main": "script.js",
+  "dependencies": {
+    "sass": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss-files/base-sass.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RytisDr/Illustreret-Videnskab-Form.git"
+  },
+  "author": "Rytis Drazdauskas, Ulrika Sniedze, Elaheh Arjomandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RytisDr/Illustreret-Videnskab-Form/issues"
+  },
+  "homepage": "https://github.com/RytisDr/Illustreret-Videnskab-Form#readme"
+}
