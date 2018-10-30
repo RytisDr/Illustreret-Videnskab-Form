@@ -21,14 +21,38 @@
         </div>
         <form>
             <p>Fields marked with * are required</p>
-            <input type="text" name="firstname" placeholder="First Name">
-            <input type="text" name="lastname" placeholder="Last Name">
-            <input type="text" name="address" placeholder="Address">
-            <input type="text" name="postcode" id="post" placeholder="Postnr.">
-            <input type="text" name="city" id="city" placeholder="City">
-            <input type="email" name="email" placeholder="E-mail">
-            <input type="email" name="repeatemail" id="repeat" placeholder="Confirm E-mail">
-            <input type="tel" name="phone" placeholder="Telephone number">
+            <div class="input">
+                <input type="text" name="firstname" required>
+                <label for="firstname">First Name</label>
+            </div>
+            <div class="input">
+                <input type="text" name="lastname" required>
+                <label for="lastname">Last Name</label>
+            </div>
+            <div class="input">
+                <input type="text" name="address" required>
+                <label for="address">Address</label>
+            </div>
+            <div class="input" id="post">
+                <input type="text" name="postcode" required>
+                <label for="postcode">Postnr.</label>
+            </div>
+            <div class="input" id="city">
+                <input type="text" name="city" required>
+                <label for="city">City</label>
+            </div>
+            <div class="input">
+                <input type="email" name="email" required>
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input">
+                <input type="email" name="repeatemail" id="repeat" required>
+                <label for="repeatemail">Confirm E-mail</label>
+            </div>
+            <div class="input">
+                <input type="tel" name="phone">
+                <label for="phone">Telephone number</label>
+            </div>
             <button type="submit">Go to payment</button>
         </form>
     </section>

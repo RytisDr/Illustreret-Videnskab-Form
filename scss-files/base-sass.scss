@@ -8,18 +8,32 @@ $button-color: #81d742;
 $blue-color: #1b69bf;
 $font: Helvetica, sans-serif, #161616;
 
-input,
-button {
-  height: 48px;
+.input {
   grid-column: 2/12;
+  height: 54px;
+
   margin-bottom: 8px;
+  position: relative;
 }
-::-webkit-input-placeholder {
-  font-size: 15px;
+input {
+  height: 48px;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 8px;
+  padding: 0;
 }
+
 img {
   display: inline-block;
   grid-row: 2;
+}
+label {
+  z-index: 100;
+  position: absolute;
+  color: #7c7e83;
+  font-size: 16px;
+  left: 8px;
+  top: 30px;
 }
 
 #customerInfo {
@@ -60,25 +74,33 @@ img {
   form {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     p {
-      font-size: 10px;
+      font-size: 12px;
       grid-column: 2/8;
-      margin-top: 5px;
+      margin-top: 10px;
       margin-bottom: 0;
     }
-
     #post {
       grid-column: 2/6;
+      #post input {
+        width: 104px;
+      }
     }
     #city {
       grid-column: 7/12;
       grid-row: 5;
+      #city input {
+        width: 179px;
+      }
     }
     button {
       background-color: $button-color;
       color: white;
       font-size: 17px;
+      grid-row: 9;
+      grid-column: 2/12;
+      height: 48px;
     }
   }
 }
