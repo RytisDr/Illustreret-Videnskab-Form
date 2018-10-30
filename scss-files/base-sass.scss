@@ -8,32 +8,9 @@ $button-color: #81d742;
 $blue-color: #1b69bf;
 $font: Helvetica, sans-serif, #161616;
 
-.input {
-  grid-column: 2/12;
-  height: 54px;
-
-  margin-bottom: 8px;
-  position: relative;
-}
-input {
-  height: 48px;
-  width: 100%;
-  position: absolute;
-  margin-bottom: 8px;
-  padding: 0;
-}
-
 img {
   display: inline-block;
   grid-row: 2;
-}
-label {
-  z-index: 100;
-  position: absolute;
-  color: #7c7e83;
-  font-size: 16px;
-  left: 8px;
-  top: 30px;
 }
 
 #customerInfo {
@@ -81,17 +58,58 @@ label {
       margin-top: 10px;
       margin-bottom: 0;
     }
+    .input {
+      grid-column: 2/12;
+      height: 48px;
+      margin-bottom: 8px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 2px 2px 2px 2px #888888;
+      input {
+        height: 48px;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+        border-width: 0;
+        border-radius: 0;
+        font-size: 14px;
+        box-shadow: none;
+        line-height: 100%;
+        padding-top: 10px;
+        padding-left: 5px;
+        &focus {
+          border-color: $button-color;
+        }
+        &:focus + label {
+          color: $blue-color;
+          font-size: 13px;
+          padding: 1px 6px;
+          z-index: 2;
+          top: 3px;
+        }
+      }
+
+      label {
+        z-index: 100;
+        position: absolute;
+        color: #7c7e83;
+        font-size: 16px;
+        padding-left: 8px;
+        top: 30px;
+      }
+    }
+
     #post {
       grid-column: 2/6;
       #post input {
-        width: 104px;
+        width: 100%;
       }
     }
     #city {
       grid-column: 7/12;
       grid-row: 5;
       #city input {
-        width: 179px;
+        width: 100%;
       }
     }
     button {
