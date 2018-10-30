@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Payment form prototype for Danish version of Illutrated Science.",
   "main": "script.js",
-  "dependencies": {
-    "sass": "^1.14.3"
-  },
   "devDependencies": {
     "node-sass": "^4.9.4"
   },

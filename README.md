@@ -4,10 +4,10 @@ Creating a payment form prototype for ILLUSTRERET VIDENSKAB.
 
 ## Getting Started
 
-Clone the repository onto your machine.
+Clone the repository onto your machine ( . for current folder at the end).
 
     ```
-    git clone https://github.com/RytisDr/Illustreret-Videnskab-Form.git
+    git clone https://github.com/RytisDr/Illustreret-Videnskab-Form.git .
     ```
 
 ### Installing
@@ -15,7 +15,7 @@ Clone the repository onto your machine.
 Now you need to install the package that we are working with on this project (f. e. npm modules or other specific data), you do that by writing:
 
     ```
-    npm install package.json
+    npm install
     ```
 
 ### WORKFLOW
