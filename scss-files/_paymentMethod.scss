@@ -1,7 +1,5 @@
 $main-font: "Roboto", sans-serif;
 $background: #f4f4f4;
-$selectionHeight: 70px;
-$selectionWidth: 300px;
 
 #paymentMethod {
   position: absolute;
@@ -20,27 +18,15 @@ $selectionWidth: 300px;
 }
 .selection {
   display: grid;
-  grid-row-gap: 10px;
-  width: $selectionWidth;
-  margin: auto;
-  input {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    margin: 19px;
-  }
-  label {
-    background-color: white;
-    text-align: center;
-    font-size: 12pt;
-    line-height: $selectionHeight;
-    height: $selectionHeight;
-    width: $selectionWidth;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
+  height: 70px;
+  border-radius: 2px;
+  background-color: white;
+  margin: 8px auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   img {
-    position: absolute;
-    height: 25px;
-    right: 50px;
+    height: 30px;
   }
 }
 .hidden {
