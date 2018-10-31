@@ -1,0 +1,19 @@
+$main-font: "Roboto", sans-serif;
+$background: #f4f4f4;
+#paymentMethod {
+  position: absolute;
+  z-index: 3;
+  font-family: $main-font;
+  background-color: $background;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+#paymentMethod h1 {
+  background-color: #c4c4c4;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14pt;
+}
