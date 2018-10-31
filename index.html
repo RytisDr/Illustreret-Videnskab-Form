@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Subscription</title>
 </head>
@@ -15,6 +16,55 @@
     <section id="customerInfo">
     </section>
     <section id="paymentMethod">
+        <h1>Choose the Payment Method</h1>
+        <form action="" method="get">
+            <div>
+                <input type="radio" name="dankort" id="dankort">
+                <label for="dankort">Visa/Dankort</label>
+                <img src="" alt="Dankort Logo">
+            </div>
+            <div>
+                <input checked type="radio" name="creditCard" id="creditCard">
+                <label for="creditCard">Credit Card</label>
+                <img src="" alt="Credit Card Logos">
+            </div>
+            <div id="moreOptions">
+                <h2>More Payment Options</h2>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="hidden">
+                <input type="radio" name="mobilePay" id="mobilePay">
+                <label for="mobilePay">MobilePay</label>
+                <img src="" alt="MobilePay Logo">
+            </div>
+            <div class="hidden">
+                <input type="radio" name="giroCard" id="giroCard">
+                <label for="giroCard">Giro Card (+10Kr)</label>
+                <img src="" alt="Credit Card Logos">
+            </div>
+            <ul>
+                <li>2 No. of Illustrated Science + N'arctic fiber jacket for 69,50 kr. + 39,50 kr. In postage and
+                    excl.</li>
+                <li>After the offer, you continue on a regular subscription and can terminate it at any time.</li>
+                <li>The subscription is paid for 4 numbers at a time, totaling 315.80 kr. (78,95 kr. Per number)</li>
+                <li>Illustrated Science is published 18 times a year.</li>
+            </ul>
+            <input required type="checkbox" name="terms" id="terms">
+            <label for="terms">I have read and accepted the subscription terms
+                <a>Read more</a></label>
+            <button type="submit">Go to Secure Payment</button>
+            <div id="backArrow">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="progress">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </form>
     </section>
     <script src="script.js"></script>
 </body>
