@@ -1,5 +1,9 @@
 $main-font: "Roboto", sans-serif;
 $background: #f4f4f4;
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
 
 #paymentMethod {
   position: absolute;
@@ -27,8 +31,32 @@ $background: #f4f4f4;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   img {
     height: 30px;
+    grid-column: 3;
+  }
+  label {
+    grid-column: 2;
+    position: relative;
+    span::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    span.radio::before {
+      left: -70px;
+      width: 32px;
+      height: 32px;
+      background-color: white;
+      border-radius: 50%;
+      border: solid 1px #e9e8e8;
+    }
   }
 }
+input[type="radio"]:checked + label span.radio::before {
+  background-color: #1b69bf;
+}
+
 .hidden {
   display: none;
 }

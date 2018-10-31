@@ -2,6 +2,10 @@ html,
 body {
   margin: 0 auto; }
 
+input[type="radio"],
+input[type="checkbox"] {
+  display: none; }
+
 #paymentMethod {
   position: absolute;
   z-index: 3;
@@ -26,7 +30,27 @@ body {
   margin: 8px auto;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
   .selection img {
-    height: 30px; }
+    height: 30px;
+    grid-column: 3; }
+  .selection label {
+    grid-column: 2;
+    position: relative; }
+    .selection label span::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
+    .selection label span.radio::before {
+      left: -70px;
+      width: 32px;
+      height: 32px;
+      background-color: white;
+      border-radius: 50%;
+      border: solid 1px #e9e8e8; }
+
+input[type="radio"]:checked + label span.radio::before {
+  background-color: #1b69bf; }
 
 .hidden {
   display: none; }
