@@ -1,5 +1,8 @@
 $main-font: "Roboto", sans-serif;
 $background: #f4f4f4;
+$selectionHeight: 70px;
+$selectionWidth: 300px;
+
 #paymentMethod {
   position: absolute;
   z-index: 3;
@@ -7,13 +10,39 @@ $background: #f4f4f4;
   background-color: $background;
   height: 100%;
 }
-.hidden {
-  display: none;
-}
+
 #paymentMethod h1 {
   background-color: #c4c4c4;
   margin: 0;
   text-align: center;
   line-height: 50px;
   font-size: 14pt;
+}
+.selection {
+  display: grid;
+  grid-row-gap: 10px;
+  width: $selectionWidth;
+  margin: auto;
+  input {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin: 19px;
+  }
+  label {
+    background-color: white;
+    text-align: center;
+    font-size: 12pt;
+    line-height: $selectionHeight;
+    height: $selectionHeight;
+    width: $selectionWidth;
+  }
+  img {
+    position: absolute;
+    height: 25px;
+    right: 50px;
+  }
+}
+.hidden {
+  display: none;
 }

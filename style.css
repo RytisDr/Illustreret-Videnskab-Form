@@ -9,12 +9,34 @@ body {
   background-color: #f4f4f4;
   height: 100%; }
 
-.hidden {
-  display: none; }
-
 #paymentMethod h1 {
   background-color: #c4c4c4;
   margin: 0;
   text-align: center;
   line-height: 50px;
   font-size: 14pt; }
+
+.selection {
+  display: grid;
+  grid-row-gap: 10px;
+  width: 300px;
+  margin: auto; }
+  .selection input {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    margin: 19px; }
+  .selection label {
+    background-color: white;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 70px;
+    height: 70px;
+    width: 300px; }
+  .selection img {
+    position: absolute;
+    height: 25px;
+    right: 50px; }
+
+.hidden {
+  display: none; }
