@@ -4,3 +4,25 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  .next {
+    background-color: #81d742;
+    width: 90vw;
+    height: 5vh;
+    border: none;
+    color: #ffff;
+    margin: 5%;
+  }
+  .progress {
+    width: 83px;
+    height: 14px;
+    margin-left: 38%;
+  }
+  .back {
+    width: 44px;
+    display: block;
+    margin: -13px 0 0 4%;
+  }
+}
