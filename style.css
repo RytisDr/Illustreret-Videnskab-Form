@@ -70,7 +70,8 @@ input[type="radio"]:checked + label span.radio::after {
 #moreOptions {
   position: relative;
   padding-bottom: 20px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  transition: all 0.15s; }
   #moreOptions h2 {
     color: #81d742;
     font-weight: 400;
@@ -112,7 +113,7 @@ input[type="radio"]:checked + label span.radio::after {
       position: absolute;
       left: 10vw;
       margin: auto;
-      transition: all 0.3s; }
+      transition: all 0.2s; }
     #PMBottom label span.check::before {
       content: "*";
       width: 27px;
