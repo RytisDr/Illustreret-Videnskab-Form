@@ -9,8 +9,13 @@ input[type="checkbox"] {
 #paymentMethod {
   position: absolute;
   z-index: 3;
+<<<<<<< HEAD
   top: 0;
   // left: 100vw;
+=======
+  left: 100vw;
+  transition: all 0.5s;
+>>>>>>> 870521b8bef1cfaa4b2d2088e0d92a2bbada1fc6
   font-family: $main-font;
   background-color: $background;
   height: 100%;
