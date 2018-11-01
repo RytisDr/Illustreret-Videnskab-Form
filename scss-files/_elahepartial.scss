@@ -9,6 +9,7 @@ body {
 
 #magazineNr {
   position: absolute;
+  height: 100vh;
 }
 .header {
   width: 100vw;
@@ -179,10 +180,6 @@ input[type="radio"]:checked:after {
 #price {
   font-size: 1.5em;
 }
-#back {
-  width: 44px;
-  margin: -13px 0 0 4%;
-}
 
 .butt-wrapper {
   display: flex;
@@ -198,21 +195,7 @@ input[type="radio"]:checked:after {
   display: flex;
   margin-top: 5%;
 }
-#next {
-  background-color: #81d742;
-  width: 90vw;
-  height: 5vh;
-  border: none;
-  color: #ffff;
-  margin: 5%;
-  font-size: $title-font;
-}
 
-#progress {
-  width: 83px;
-  height: 14px;
-  margin-left: 38%;
-}
 .shipment img {
   width: 30px;
 }

@@ -9,7 +9,6 @@ const backButton = document.getElementById("back");
 const backButtonCustomerInfo = document.querySelector("#back2");
 const aboutButton = document.querySelector(".about");
 const nextButton = document.querySelector("#next");
-const customerInfo = document.querySelector("#customerInfo");
 
 orderButton.addEventListener("click", switchtocheckout);
 function switchtocheckout() {
@@ -29,7 +28,14 @@ function switchToCustomerInfo() {
   });
   document
     .querySelector("#go-to-payment")
-    .addEventListener("click", goToPayment);
+    .addEventListener("click", function() {
+      document.querySelector("#paymentMethod").style.left = "0";
+    });
+}
+function backFromPayment() {
+  document.querySelector("#back3").addEventListener("click", function() {
+    document.querySelector("#paymentMethod").style.left = "100vw";
+  });
 }
 function backFromCustomerInfo() {
   backButtonCustomerInfo.addEventListener("click", function() {
@@ -42,6 +48,7 @@ function init() {
 
   switchToCustomerInfo();
   backFromCustomerInfo();
+  backFromPayment();
 
   radioSelections.forEach(e =>
     e.addEventListener("click", function() {
@@ -60,7 +67,4 @@ function showMoreOpt(button) {
       .querySelectorAll(".selection")
       .forEach(e => e.classList.remove("hidden"));
   });
-}
-function goToPayment() {
-  document.querySelector("#paymentMethod").style.left = "0";
 }

@@ -138,12 +138,12 @@
             </div>
 
         </section>
-        </footer>
-        <button id="next">Next</button>
-        <img id="progress" src="images/progress.png">
-        <img id="back" src="images/back.png">
-
         <footer>
+            <button class="next" id="next">Next</button>
+            <img class="progress" id="progress" src="images/progress.png">
+            <img class="back" id="back" src="images/back.png">
+        </footer>
+
     </section>
     <section id="customerInfo">
         <div id="customerInfoHeader">
@@ -200,21 +200,21 @@
             </div>
         </form>
         <footer>
-            <button id="go-to-payment">Go to Payment</button>
-            <img id="progress2" src="images/progress2.png">
-            <img id="back2" src="images/back.png">
+            <button class="next" id="go-to-payment">Go to Payment</button>
+            <img class="progress" id="progress2" src="images/progress2.png">
+            <img class="back" id="back2" src="images/back.png">
         </footer>
     </section>
     <section id="paymentMethod">
         <h1>Choose the Payment Method</h1>
         <form>
             <div class="selection">
-                <input required type="radio" name="paymentOption" id="dankort">
+                <input required type="radio" class="radio-button" name="paymentOption" id="dankort">
                 <label for="dankort"><span class="radio">Visa/Dankort</span> </label>
                 <img src="images/Dankort-logo_83x52px.png" alt="Dankort Logo">
             </div>
             <div class="selection">
-                <input checked type="radio" name="paymentOption" id="creditCard">
+                <input checked type="radio" class="radio-button" name="paymentOption" id="creditCard">
                 <label for="creditCard"><span class="radio">Credit Card</span> </label>
                 <img src="images/master-card-visa-logos_169x52px_transp.png" alt="Credit Card Logos">
             </div>
@@ -224,12 +224,12 @@
                 <div></div>
             </div>
             <div class="hidden selection">
-                <input type="radio" name="paymentOption" id="mobilePay">
+                <input type="radio" class="radio-button" name="paymentOption" id="mobilePay">
                 <label for="mobilePay"><span class="radio">MobilePay</span></label>
                 <img src="images/MP-logo_161x52px_transp.png" alt="MobilePay Logo">
             </div>
             <div class="hidden selection">
-                <input type="radio" name="paymentOption" id="giroCard">
+                <input type="radio" class="radio-button" name="paymentOption" id="giroCard">
                 <label for="giroCard"><span class="radio">Giro Card (+10Kr)</span> </label>
             </div>
             <section id="PMBottom">
@@ -247,9 +247,9 @@
             </section>
         </form>
         <footer>
-            <button id="proceed-to-payment">Go to Payment</button>
-            <img id="progress3" src="images/progress2.png">
-            <img id="back3" src="images/back.png">
+            <button class="next" id="next3">Go to Payment</button>
+            <img class="progress" id="progress3" src="images/progres3.png">
+            <img class="back" id="back3" src="images/back.png">
         </footer>
     </section>
     <script src="script.js"></script>
