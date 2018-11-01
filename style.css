@@ -286,6 +286,7 @@ input[type="radio"]:checked:after {
 
 #order {
   background-color: #81d742;
+  border-radius: 2px;
   width: 66vw;
   height: 5vh;
   border: none;
@@ -327,7 +328,8 @@ input[type="radio"]:checked:after {
   text-decoration: none;
   color: black;
   font-size: 0.7em;
-  border: 2px solid #81d742; }
+  border: 2px solid #81d742;
+  border-radius: 2px; }
 
 .about {
   padding: 0.5em; }
