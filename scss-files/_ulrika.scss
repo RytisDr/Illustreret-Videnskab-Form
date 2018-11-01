@@ -6,6 +6,7 @@ $font: Helvetica, sans-serif, #161616;
 #customerInfo {
   position: absolute;
   left: 100vw;
+  top: 0;
   z-index: 2;
   background-color: $background-color;
   width: 100vw;
@@ -50,7 +51,7 @@ $font: Helvetica, sans-serif, #161616;
   form {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     p {
       font-size: 12px;
       grid-column: 2/11;
@@ -121,5 +122,23 @@ $font: Helvetica, sans-serif, #161616;
         left: 63%;
       }
     }
+  }
+  #go-to-payment {
+    background-color: #81d742;
+    width: 90vw;
+    height: 5vh;
+    border: none;
+    color: #ffff;
+    margin: 5%;
+  }
+  #progress2 {
+    width: 83px;
+    height: 14px;
+    margin-left: 38%;
+  }
+  #back2 {
+    width: 44px;
+    display: block;
+    margin: -13px 0 0 4%;
   }
 }

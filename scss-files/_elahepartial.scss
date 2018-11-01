@@ -6,6 +6,10 @@ body {
   font-family: $font;
   background-color: $main-color;
 }
+
+#magazineNr {
+  position: absolute;
+}
 .header {
   width: 100vw;
   height: 7vh;
@@ -20,7 +24,7 @@ body {
   align-items: center;
   margin-top: 5%;
 }
-h2 {
+#magazineNr h2 {
   font-size: 1em;
   text-align: center;
   font-weight: 300;
@@ -97,7 +101,7 @@ h4 {
   background-color: #ffff;
   margin: 0 5% 5% 5%;
 }
-input {
+#magazineNr input {
   margin-top: 7%;
 }
 .mg-number :nth-child(2) {
