@@ -6,6 +6,7 @@ $font: Helvetica, sans-serif, #161616;
 #customerInfo {
   position: absolute;
   left: 100vw;
+  transition: all 0.5s;
   top: 0;
   z-index: 2;
   background-color: $background-color;

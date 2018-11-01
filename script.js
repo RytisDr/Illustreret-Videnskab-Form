@@ -24,13 +24,14 @@ function back() {
 }
 
 function switchToCustomerInfo() {
-  console.log("Also works");
   nextButton.addEventListener("click", function() {
     customerInfo.style.left = "0vw";
   });
+  document
+    .querySelector("#go-to-payment")
+    .addEventListener("click", goToPayment);
 }
 function backFromCustomerInfo() {
-  console.log("works");
   backButtonCustomerInfo.addEventListener("click", function() {
     customerInfo.style.left = "100vw";
   });
@@ -60,4 +61,6 @@ function showMoreOpt(button) {
       .forEach(e => e.classList.remove("hidden"));
   });
 }
-function switchPages() {}
+function goToPayment() {
+  document.querySelector("#paymentMethod").style.left = "0";
+}
