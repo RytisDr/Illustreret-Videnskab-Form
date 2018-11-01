@@ -2,11 +2,6 @@
 
 window.addEventListener("DOMContentLoaded", init);
 
-function init() {
-  switchToCustomerInfo();
-  backFromCustomerInfo();
-}
-
 const orderButton = document.querySelector("#order");
 const checkoutPage = document.getElementById("magazineNr");
 const landingPage = document.getElementById("landingpage");
@@ -40,3 +35,29 @@ function backFromCustomerInfo() {
     customerInfo.style.left = "100vw";
   });
 }
+function init() {
+  let radioSelections = document.querySelectorAll(".selection");
+  let morePaymentOpt = document.querySelector("#moreOptions");
+
+  switchToCustomerInfo();
+  backFromCustomerInfo();
+
+  radioSelections.forEach(e =>
+    e.addEventListener("click", function() {
+      e.querySelector("input").checked = true;
+    })
+  );
+  morePaymentOpt.addEventListener("click", function() {
+    showMoreOpt(morePaymentOpt);
+  });
+}
+function showMoreOpt(button) {
+  button.style.opacity = "0";
+  button.addEventListener("transitionend", function() {
+    button.style.display = "none";
+    document
+      .querySelectorAll(".selection")
+      .forEach(e => e.classList.remove("hidden"));
+  });
+}
+function switchPages() {}

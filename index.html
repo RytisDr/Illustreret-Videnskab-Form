@@ -201,6 +201,45 @@
         <img id="back2" src="images/back.png">
     </section>
     <section id="paymentMethod">
+        <h1>Choose the Payment Method</h1>
+        <form>
+            <div class="selection">
+                <input required type="radio" name="paymentOption" id="dankort">
+                <label for="dankort"><span class="radio">Visa/Dankort</span> </label>
+                <img src="images/Dankort-logo_83x52px.png" alt="Dankort Logo">
+            </div>
+            <div class="selection">
+                <input checked type="radio" name="paymentOption" id="creditCard">
+                <label for="creditCard"><span class="radio">Credit Card</span> </label>
+                <img src="images/master-card-visa-logos_169x52px_transp.png" alt="Credit Card Logos">
+            </div>
+            <div id="moreOptions">
+                <h2>More Payment Options</h2>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="hidden selection">
+                <input type="radio" name="paymentOption" id="mobilePay">
+                <label for="mobilePay"><span class="radio">MobilePay</span></label>
+                <img src="images/MP-logo_161x52px_transp.png" alt="MobilePay Logo">
+            </div>
+            <div class="hidden selection">
+                <input type="radio" name="paymentOption" id="giroCard">
+                <label for="giroCard"><span class="radio">Giro Card (+10Kr)</span> </label>
+            </div>
+            <section id="PMBottom">
+                <ul>
+                    <li>2 No. of Illustrated Science + N'arctic fiber jacket for 69,50 kr. + 39,50 kr. In postage and
+                        excl.</li>
+                    <li>After the offer, you continue on a regular subscription and can terminate it at any time.</li>
+                    <li>The subscription is paid for 4 numbers at a time, totaling 315.80 kr. (78,95 kr. Per number)</li>
+                    <li>Illustrated Science is published 18 times a year.</li>
+                </ul>
+                <input required type="checkbox" name="terms" id="terms">
+                <label for="terms"><span class="check"></span>I have read and accepted the subscription terms.
+                    <a href="#">Read more</a></label>
+            </section>
+        </form>
     </section>
     <script src="script.js"></script>
 </body>
