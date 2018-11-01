@@ -1,21 +1,22 @@
-body {
-  margin: 0;
-}
-
 $background-color: #f4f4f4;
 $button-color: #81d742;
 $blue-color: #1b69bf;
 $font: Helvetica, sans-serif, #161616;
 
 #customerInfo {
+  position: absolute;
+  left: 100vw;
+  z-index: 2;
   background-color: $background-color;
   width: 100vw;
+  height: 100vh;
   #customerInfoHeader {
     background-color: #c4c4c4;
     height: 75px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 25px;
     h1 {
       font: $font;
       margin: 11px auto 0 auto;
