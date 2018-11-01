@@ -8,11 +8,6 @@ $button-color: #81d742;
 $blue-color: #1b69bf;
 $font: Helvetica, sans-serif, #161616;
 
-img {
-  display: inline-block;
-  grid-row: 2;
-}
-
 #customerInfo {
   background-color: $background-color;
   width: 100vw;
@@ -37,6 +32,10 @@ img {
       grid-column: 2/4;
       text-align: right;
     }
+    img {
+      display: inline-block;
+      grid-row: 2;
+    }
     img:nth-child(3) {
       width: 40px;
       grid-column: 4;
@@ -50,75 +49,77 @@ img {
   }
   form {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     p {
       font-size: 12px;
-      grid-column: 2/8;
+      grid-column: 2/11;
       margin-top: 10px;
       margin-bottom: 0;
     }
     .input {
-      grid-column: 2/12;
-      height: 48px;
+      grid-template-columns: 1fr 2fr;
+      grid-column: 2/16;
+      height: 51px;
       margin-bottom: 8px;
       position: relative;
       overflow: hidden;
-      box-shadow: 2px 2px 2px 2px #888888;
+
       input {
+        position: absolute;
+        left: 25%;
+        width: 68%;
         height: 48px;
-        width: 100%;
-        position: absolute;
-        padding: 0;
-        border-width: 0;
-        border-radius: 0;
-        font-size: 14px;
-        box-shadow: none;
-        line-height: 100%;
-        padding-top: 10px;
-        padding-left: 5px;
-        &focus {
-          border-color: $button-color;
+        border: none;
+        border-right: solid 8px #c4c4c4;
+        padding: 0 0 0 15px;
+        box-shadow: 0px 3px #c4c4c4;
+        &:focus {
+          outline: 0;
         }
-        &:focus + label {
-          color: $blue-color;
-          font-size: 13px;
-          padding: 1px 6px;
-          z-index: 2;
-          top: 3px;
+
+        &:valid:not(:placeholder-shown) {
+          border-right: 8px solid $button-color;
+        }
+        &:invalid:not(:placeholder-shown) {
+          border-right: 8px solid rgba(255, 0, 0, 0.534);
         }
       }
-
+      .correct {
+        position: absolute;
+        right: -6%;
+      }
       label {
-        z-index: 100;
         position: absolute;
-        color: #7c7e83;
+        width: 25%;
+        z-index: 100;
+        color: $font;
         font-size: 16px;
-        padding-left: 8px;
-        top: 30px;
+        top: 23%;
       }
-    }
+      .required {
+        position: absolute;
+        color: rgba(255, 0, 0, 0.534);
+        z-index: 500;
+        left: 22%;
+      }
+      #city-required {
+        left: 60.5%;
+      }
+      #post-city {
+        position: relative;
+        grid-row: 5;
+        grid-column: 2/16;
+      }
 
-    #post {
-      grid-column: 2/6;
-      #post input {
-        width: 100%;
+      #post {
+        left: 25%;
+        width: 25%;
       }
-    }
-    #city {
-      grid-column: 7/12;
-      grid-row: 5;
-      #city input {
-        width: 100%;
+      #city {
+        width: 30%;
+        left: 63%;
       }
-    }
-    button {
-      background-color: $button-color;
-      color: white;
-      font-size: 17px;
-      grid-row: 9;
-      grid-column: 2/12;
-      height: 48px;
     }
   }
 }
