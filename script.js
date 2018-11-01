@@ -43,22 +43,29 @@ function backFromCustomerInfo() {
   });
 }
 function init() {
+  let magazineNrRadioBtns = document.querySelectorAll(".input-wrapper");
   let radioSelections = document.querySelectorAll(".selection");
   let morePaymentOpt = document.querySelector("#moreOptions");
-
+  //THIS FUNCTION creates event listeners for all radio buttons, accepts them as argument.
+  radioButtons(radioSelections);
+  radioButtons(magazineNrRadioBtns);
+  //
   switchToCustomerInfo();
   backFromCustomerInfo();
   backFromPayment();
 
+  morePaymentOpt.addEventListener("click", function() {
+    showMoreOpt(morePaymentOpt);
+  });
+}
+function radioButtons(radioSelections) {
   radioSelections.forEach(e =>
     e.addEventListener("click", function() {
       e.querySelector("input").checked = true;
     })
   );
-  morePaymentOpt.addEventListener("click", function() {
-    showMoreOpt(morePaymentOpt);
-  });
 }
+//function to show more payment options
 function showMoreOpt(button) {
   button.style.opacity = "0";
   button.addEventListener("transitionend", function() {
