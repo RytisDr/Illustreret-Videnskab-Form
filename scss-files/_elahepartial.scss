@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 h2 {
   font-size: 1em;
@@ -168,28 +168,25 @@ input[type="radio"]:checked:after {
   color: #ffff;
   margin-left: 17%;
   font-size: $title-font;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: sticky;
 }
 #price {
   font-size: 1.5em;
-  color: red;
 }
 #back {
   width: 44px;
   margin: -13px 0 0 4%;
 }
-.secondary-button {
-  width: 26vw;
-  height: 4vh;
-  border: 2px solid lightgray;
-  background-color: $main-color;
-}
+
 .butt-wrapper {
   display: flex;
   justify-content: space-evenly;
   padding: 2.5em 0.7em 0 0.7em;
 }
 .value {
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .explanation {
@@ -214,4 +211,24 @@ input[type="radio"]:checked:after {
 }
 .shipment img {
   width: 30px;
+}
+#about-bag {
+  margin: 6em 1em 1em 1em;
+  text-align: justify;
+}
+#about-bag p {
+  font-size: $subtitle-font;
+}
+.about,
+.about2 {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7em;
+  border: 2px solid #81d742;
+}
+.about {
+  padding: 0.5em;
+}
+.about2 {
+  padding: 0.5em 1.2em 0.5em 1.2em;
 }

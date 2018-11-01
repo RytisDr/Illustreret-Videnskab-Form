@@ -8,6 +8,7 @@ const orderButton = document.querySelector("#order");
 const checkoutPage = document.getElementById("magazineNr");
 const landingPage = document.getElementById("landingpage");
 const backButton = document.getElementById("back");
+const aboutButton = document.querySelector(".about");
 
 orderButton.addEventListener("click", switchtocheckout);
 function switchtocheckout() {
@@ -20,4 +21,5 @@ function back() {
   checkoutPage.classList.add("hidden");
   landingPage.classList.remove("hidden");
 }
+
 function switchPages() {}
