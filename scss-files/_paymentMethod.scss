@@ -135,8 +135,8 @@ input[type="radio"]:checked + label span.radio::after {
       transition: all 0.3s;
     }
     span.check::after {
-      z-index: 0;
       content: "✔";
+      color: white;
       width: 27px;
       height: 27px;
       text-align: center;
