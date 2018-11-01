@@ -350,7 +350,7 @@ input[type="checkbox"] {
 #paymentMethod {
   position: absolute;
   z-index: 3;
-  left: 100vw;
+  top: 0;
   font-family: "Helvetica", sans-serif;
   background-color: #f4f4f4;
   height: 100%;
@@ -481,3 +481,22 @@ input[type="checkbox"]:checked + label span.check::after {
 
 .hidden {
   display: none; }
+
+#proceed-to-payment {
+  background-color: #81d742;
+  width: 90vw;
+  height: 5vh;
+  border: none;
+  color: #ffff;
+  margin: 5%;
+  font-size: 0.9em; }
+
+#progress3 {
+  width: 83px;
+  height: 14px;
+  margin-left: 38%; }
+
+#back3 {
+  width: 44px;
+  display: block;
+  margin: -13px 0 0 4%; }
