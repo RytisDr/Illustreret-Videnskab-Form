@@ -98,6 +98,7 @@ h4 {
 }
 .input-wrapper {
   display: flex;
+  position: relative;
   justify-content: space-around;
   background-color: #ffff;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,23 +113,36 @@ h4 {
   margin-top: 14%;
   font-size: $subtitle-font;
 }
-input[type="radio"]:after {
-  width: 15px;
-  height: 15px;
+input[type="radio"]:after,
+input[type="radio"]:before {
+  transition: all 0.2s;
   border-radius: 50%;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #ffff;
+  width: 32px;
+  height: 32px;
+  left: 12px;
+  top: 12px;
+  position: absolute;
+  background-color: transparent;
   content: "";
   display: inline-block;
   visibility: visible;
-  border: 2px solid #c4c4c4;
 }
-
+input[type="radio"]:before {
+  border: 2px solid #c4c4c4;
+  background-color: white;
+}
+input[type="radio"]:after {
+  border: 2px solid transparent;
+}
+input[type="radio"]:checked:before {
+  border: #1b69bf 2px solid;
+}
 input[type="radio"]:checked:after {
   background-color: #1b69bf;
-  border: 2px solid #1b69bf;
+  width: 18px;
+  height: 18px;
+  left: 19px;
+  top: 19px;
 }
 #mostpopular {
   background-color: #1b69bf;
