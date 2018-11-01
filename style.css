@@ -14,7 +14,8 @@ footer {
     height: 5vh;
     border: none;
     color: #ffff;
-    margin: 5%; }
+    margin: 5%;
+    border-radius: 2px; }
   footer .progress {
     width: 83px;
     height: 14px;
@@ -87,7 +88,8 @@ footer {
         border: none;
         border-right: solid 8px #c4c4c4;
         padding: 0 0 0 15px;
-        box-shadow: 0px 3px #c4c4c4; }
+        border-radius: 2px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
         #customerInfo form .input input:focus {
           outline: 0; }
         #customerInfo form .input input:valid:not(:placeholder-shown) {
@@ -217,6 +219,8 @@ h4 {
   display: flex;
   justify-content: space-around;
   background-color: #ffff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
   margin: 0 5% 5% 5%; }
 
 #magazineNr input {
