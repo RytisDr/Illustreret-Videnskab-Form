@@ -72,6 +72,7 @@ input[type="radio"]:checked + label span.radio::after {
 }
 #moreOptions {
   position: relative;
+  padding-bottom: 20px;
   h2 {
     color: $buttonColor;
     font-weight: 400;
@@ -82,7 +83,7 @@ input[type="radio"]:checked + label span.radio::after {
     background-color: $buttonColor;
     width: 2px;
     height: 25px;
-    top: 20px;
+    top: 25px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -92,10 +93,15 @@ input[type="radio"]:checked + label span.radio::after {
   }
   div:nth-child(2) {
     transform: rotate(-45deg);
-    left: -9%;
+    left: -16px;
+  }
+  div:nth-child(3) {
+    right: -16px;
   }
 }
-
+#PMBottom {
+  margin-bottom: 0vh;
+}
 .hidden {
   display: none;
 }
