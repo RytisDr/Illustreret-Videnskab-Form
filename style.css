@@ -86,16 +86,16 @@ footer {
         width: 68%;
         height: 48px;
         border: none;
-        border-right: solid 8px #c4c4c4;
+        border-right: solid 6px #c4c4c4;
         padding: 0 0 0 15px;
         border-radius: 2px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
         #customerInfo form .input input:focus {
           outline: 0; }
         #customerInfo form .input input:valid:not(:placeholder-shown) {
-          border-right: 8px solid #81d742; }
+          border-right: 6px solid #81d742; }
         #customerInfo form .input input:invalid:not(:placeholder-shown) {
-          border-right: 8px solid rgba(255, 0, 0, 0.534); }
+          border-right: 6px solid rgba(255, 0, 0, 0.534); }
       #customerInfo form .input .correct {
         position: absolute;
         right: -6%; }
@@ -109,6 +109,7 @@ footer {
       #customerInfo form .input .required {
         position: absolute;
         color: rgba(255, 0, 0, 0.534);
+        font-size: 23px;
         z-index: 500;
         left: 22%; }
       #customerInfo form .input #city-required {
@@ -334,7 +335,7 @@ input[type="radio"]:checked:after {
   text-decoration: none;
   color: black;
   font-size: 0.7em;
-  border: 2px solid #81d742;
+  border: 2px solid #1b69bf;
   border-radius: 2px; }
 
 .about {
@@ -342,6 +343,12 @@ input[type="radio"]:checked:after {
 
 .about2 {
   padding: 0.5em 1.2em 0.5em 1.2em; }
+
+#stock {
+  color: #61a131;
+  position: absolute;
+  top: 136px;
+  left: 71%; }
 
 .radio-button,
 input[type="checkbox"] {

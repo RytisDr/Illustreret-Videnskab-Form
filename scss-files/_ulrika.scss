@@ -73,7 +73,7 @@ $font: Helvetica, sans-serif, #161616;
         width: 68%;
         height: 48px;
         border: none;
-        border-right: solid 8px #c4c4c4;
+        border-right: solid 6px #c4c4c4;
         padding: 0 0 0 15px;
         border-radius: 2px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,10 +82,10 @@ $font: Helvetica, sans-serif, #161616;
         }
 
         &:valid:not(:placeholder-shown) {
-          border-right: 8px solid $button-color;
+          border-right: 6px solid $button-color;
         }
         &:invalid:not(:placeholder-shown) {
-          border-right: 8px solid rgba(255, 0, 0, 0.534);
+          border-right: 6px solid rgba(255, 0, 0, 0.534);
         }
       }
       .correct {
@@ -103,6 +103,7 @@ $font: Helvetica, sans-serif, #161616;
       .required {
         position: absolute;
         color: rgba(255, 0, 0, 0.534);
+        font-size: 23px;
         z-index: 500;
         left: 22%;
       }

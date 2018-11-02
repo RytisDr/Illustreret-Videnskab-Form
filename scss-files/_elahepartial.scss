@@ -219,7 +219,7 @@ input[type="radio"]:checked:after {
   text-decoration: none;
   color: black;
   font-size: 0.7em;
-  border: 2px solid #81d742;
+  border: 2px solid #1b69bf;
   border-radius: 2px;
 }
 .about {
@@ -227,4 +227,10 @@ input[type="radio"]:checked:after {
 }
 .about2 {
   padding: 0.5em 1.2em 0.5em 1.2em;
+}
+#stock {
+  color: #61a131;
+  position: absolute;
+  top: 136px;
+  left: 71%;
 }
